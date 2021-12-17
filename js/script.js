@@ -1,35 +1,49 @@
 
-function boxCreator(container, numbersBox, colorClass) {
-    for (let i = 0; i < numbersBox; i++) {
+
+// variabili 
+
+const outputHtml = document.getElementById('grid-output');
+const buttonHtml = document.getElementById('button-output')
+// bottoni 
+const color = ['white', 'black', 'red', 'blue', 'green', 'teal', 'aqua']
+let colorSelect = ''
+
+
+function columnCreator(container, numberColumn) {
+    for (let i = 0; i < numberColumn; i++) {
         const newBox = document.createElement('div');
         newBox.className = 'box';
         container.append(newBox);
         newBox.addEventListener('click',function() {
-            this.classList.toggle(colorClass);
+            this.style.backgroundColor = colorSelect;
         })
+    }
+}
+
+function gridCreator(container, numberRow) {
+    let rowBox = 0;
+    for(let z = 0; z < numberRow; z++) {
+        rowBox = document.createElement('div')  
+        rowBox.className = 'd-flex'
+        container.append(rowBox);
+        columnCreator(rowBox, 10);
     }
 }
 
 function buttonCreator(buttonOutput, colorArray, colorSelected) {
     for( let n = 0; n < colorArray.length; n++) {
-
+        
         const newButton = document.createElement('button');
+        newButton.className = 'button';
         newButton.style.backgroundColor = color[n];
         buttonOutput.append(newButton);
-        let colorSelected;
         newButton.addEventListener('click', function() {
-            colorSelected = color[n];
+            colorSelect = color[n];
         })
     }
 }
-// variabili 
-const outputHtml = document.getElementById('grid-output');
-const buttonHtml = document.getElementById('button-output')
-// bottoni 
-const color = ['black', 'red', 'blue', 'green', 'teal']
-let colorSelect
+// boxCreator(outputHtml, 100, colorSelect)
 
-
-boxCreator(outputHtml, 100)
+gridCreator(outputHtml,15)
 
 buttonCreator(buttonHtml, color, colorSelect)
