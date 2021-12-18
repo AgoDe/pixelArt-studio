@@ -15,19 +15,28 @@ body {
 header {
     height: 100px;
     border-bottom: blanchedalmond 2px solid;
+
 }
 /* ------ / HEADER --------- */
 
 
 /* ------   MAIN --------- */
 main {
-    height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
     border-bottom: blanchedalmond 2px solid;
+    
 }
-
-#grid-output {
-    padding: 20px;
+.scroll-box {
+    max-width: 100%;
+    max-height: calc(100vh - 200px);
+    overflow: auto;
     background-color: white;
+    padding: 20px;
+}
+#grid-output {
+ 
+    
+
 }
 
 .box {
@@ -41,8 +50,12 @@ main {
 /* ------ / MAIN --------- */
 
 /* ------   NAV --------- */
-nav.container {
+nav {
     height: 100px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    line-height: 100px;
 }
 
 .button {
@@ -51,6 +64,7 @@ nav.container {
     border-radius: 50%;
     margin: 5px;
     border: black 1px solid;
+    vertical-align: middle;
 }
 /* ------ / NAV --------- */
 

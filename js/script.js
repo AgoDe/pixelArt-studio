@@ -5,7 +5,23 @@
 const outputHtml = document.getElementById('grid-output');
 const buttonHtml = document.getElementById('button-output')
 // bottoni 
-const color = ['white', 'black', 'red', 'blue', 'green', 'teal', 'aqua', 'brown', 'grey']
+const color = ['white',
+ 'aqua',
+ 'blue',
+ 'blueviolet',
+ 'plum',
+ 'pink',
+ 'red',
+ 'tomato',
+ 'orange',
+ 'yellow',
+ 'lime',
+ 'seagreen',
+ 'green',
+ 'brown',
+ 'grey',
+ 'black'
+]
 let colorSelect = ''
 
 // funzione per creare la tabella di disegno
@@ -45,7 +61,7 @@ function buttonCreator(buttonOutput, colorArray, activeColor) {
 // let userColumn = parseInt(prompt('scegli il numero di colonne'));
 // let userRow = parseInt(prompt('scegli il numero di righe'));
 
-let userColumn = 25;
+let userColumn = 10;
 let userRow = 15;
 
 gridCreator(outputHtml, userRow, userColumn, colorSelect)
