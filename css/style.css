@@ -1,24 +1,62 @@
+* {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 
-/* box */
+body {
+    background-color: #333;
+}
+
+.container {
+    color: white;
+    text-align: center;
+}
+
+/* ------   HEADER --------- */
+header {
+    height: 100px;
+    border-bottom: blanchedalmond 2px solid;
+}
+/* ------ / HEADER --------- */
+
+
+/* ------   MAIN --------- */
+main {
+    height: calc(100vh - 200px);
+    border-bottom: blanchedalmond 2px solid;
+}
+
+#grid-output {
+    padding: 20px;
+    background-color: white;
+}
+
 .box {
     height: 30px;
     width: 30px;
     border: 1px black solid;
 }
+.box:hover {
+    cursor: pointer;
+}
+/* ------ / MAIN --------- */
 
-/* bottoni */
+/* ------   NAV --------- */
+nav.container {
+    height: 100px;
+}
 
 .button {
     height: 30px;
-    width: 50px;
-    border: black 1px solid ;
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    border: black 1px solid;
 }
-.red {
-    background-color: red;
-}
-.blue {
-    background-color: blue;
-}
-.green {
-    background-color: green;
-}
+/* ------ / NAV --------- */
+
+/* box */
+
+
+/* bottoni */
+
+
