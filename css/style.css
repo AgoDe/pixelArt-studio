@@ -58,15 +58,14 @@ nav {
 article {
     width: calc(100% - 60px);
     height: 100%;
+    padding: 30px;
    
 }
 
-
-#grid-output {
-    display: flex;
-    justify-content: center;
+#button-output {
+    max-height: 100%;
+    overflow-y: auto;
 }
-
 .button {
     height: 30px;
     width: 30px;
@@ -79,10 +78,27 @@ article {
     cursor: pointer;
 }
 
+.grid-box {
+    background-color: white;
+    height: 100%;
+    max-width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+#grid-output {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
 
 .box {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border: 1px black solid;
 }
 .box:hover {
@@ -90,9 +106,6 @@ article {
 }
 /* ------ / MAIN --------- */
 
-/* ------   NAV --------- */
-
-/* ------ / NAV --------- */
 
 
 
