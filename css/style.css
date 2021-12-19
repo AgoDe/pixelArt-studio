@@ -1,6 +1,23 @@
+/* -------  CLASSI UTILITY --------- */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
+.f-left {
+    float: left;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* ------ / CLASSI UTILITY --------- */
 
 body {
     background-color: #333;
@@ -13,31 +30,55 @@ body {
 
 /* ------   HEADER --------- */
 header {
-    height: 100px;
+    height: 80px;
+    padding: 10px;
     border-bottom: blanchedalmond 2px solid;
+}
 
+header h1 {
+    font-size: 40px;
+    margin: 5px;
 }
 /* ------ / HEADER --------- */
 
 
 /* ------   MAIN --------- */
+
 main {
-    max-height: calc(100vh - 200px);
-    border-bottom: blanchedalmond 2px solid;
+    height: calc(100vh - 80px);
     
 }
-.scroll-box {
-    max-width: 100%;
-    max-height: calc(100vh - 200px);
-    overflow: auto;
-    background-color: white;
-    padding: 20px;
-}
-#grid-output {
- 
-    
+nav {
+    width: 60px;
+    height: 100%;
+    border-right: 2px white solid;
+    padding: 10px;
 
 }
+article {
+    width: calc(100% - 60px);
+    height: 100%;
+   
+}
+
+
+#grid-output {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    border: black 1px solid;
+    vertical-align: middle;
+}
+.button:hover {
+    cursor: pointer;
+}
+
 
 .box {
     height: 30px;
@@ -50,27 +91,8 @@ main {
 /* ------ / MAIN --------- */
 
 /* ------   NAV --------- */
-nav {
-    height: 100px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    line-height: 100px;
-}
 
-.button {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    margin: 5px;
-    border: black 1px solid;
-    vertical-align: middle;
-}
 /* ------ / NAV --------- */
 
-/* box */
-
-
-/* bottoni */
 
 
