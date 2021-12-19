@@ -61,7 +61,7 @@ function buttonCreator(buttonOutput, colorArray, activeColor) {
 // let userColumn = parseInt(prompt('scegli il numero di colonne'));
 // let userRow = parseInt(prompt('scegli il numero di righe'));
 
-let userColumn = 12;
+let userColumn = 10;
 let userRow = 20;
 
 gridCreator(outputHtml, userRow, userColumn, colorSelect)

@@ -26,18 +26,18 @@ body {
 .container {
     color: white;
     text-align: center;
+    height: 90vh;
 }
 
 /* ------   HEADER --------- */
 header {
-    height: 80px;
+    height: 50px;
     padding: 10px;
     border-bottom: blanchedalmond 2px solid;
 }
 
 header h1 {
-    font-size: 40px;
-    margin: 5px;
+    font-size: 30px;
 }
 /* ------ / HEADER --------- */
 
@@ -45,20 +45,20 @@ header h1 {
 /* ------   MAIN --------- */
 
 main {
-    height: calc(100vh - 80px);
+    height: calc(100% - 50px);
     
 }
 nav {
     width: 60px;
     height: 100%;
     border-right: 2px white solid;
-    padding: 10px;
+    padding: 5px;
 
 }
 article {
     width: calc(100% - 60px);
     height: 100%;
-    padding: 30px;
+    padding: 15px;
    
 }
 
@@ -70,9 +70,8 @@ article {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 3px;
     border: black 1px solid;
-    vertical-align: middle;
 }
 .button:hover {
     cursor: pointer;
