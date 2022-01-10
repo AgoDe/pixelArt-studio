@@ -1,67 +1,57 @@
-/* -------  CLASSI UTILITY --------- */
+/* -----   CLASSI UTILITY -------------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.f-left {
-    float: left;
+.box {
+    width: 20px;
+    height: 20px;
+    border: 1px black solid;
 }
+
 
 .clearfix {
-    content: '';
-    display: table;
     clear: both;
+    content: "";
+    display: table;
 }
-
-
-/* ------ / CLASSI UTILITY --------- */
+/* ----- / CLASSI UTILITY -------------- */
 
 body {
     background-color: #333;
+    color: #fff
 }
 
-.container {
-    color: white;
-    text-align: center;
-    height: 90vh;
-}
+/* -----   HEADER -------------- */
 
-/* ------   HEADER --------- */
 header {
-    height: 50px;
-    padding: 10px;
-    border-bottom: blanchedalmond 2px solid;
+    height: 30px;
+    padding: 4px;
+    border-bottom: white 2px solid ;
+    line-height: 50px
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 16px;
 }
-/* ------ / HEADER --------- */
 
-
-/* ------   MAIN --------- */
+header h3 {
+    display: none;
+}
+/* ----- / HEADER -------------- */
 
 main {
-    height: calc(100% - 50px);
-    
+    height: calc(100vh - 50px);
+    padding: 4px;
 }
+
+/* -----   NAV ----------------- */
 nav {
-    width: 60px;
+    float: left;
     height: 100%;
-    border-right: 2px white solid;
-    padding: 5px;
-
+    width: 70px;
+    padding: 3px;
 }
-article {
-    width: calc(100% - 60px);
-    height: 100%;
-    padding: 15px;
-   
-}
-
 #button-output {
     max-height: 100%;
     overflow-y: auto;
@@ -76,7 +66,13 @@ article {
 .button:hover {
     cursor: pointer;
 }
+/* ----- / NAV ----------------- */
 
+/* -----   ARTICLE ------------- */
+article {
+    height: 100%;
+    padding: 20px;
+}
 .grid-box {
     background-color: white;
     height: 100%;
@@ -93,18 +89,56 @@ article {
     display: flex;
     justify-content: center;
 
+
 }
+/* ----- / ARTICLE ------------- */
 
-.box {
-    height: 25px;
-    width: 25px;
-    border: 1px black solid;
+/* --------------------------------- */
+/* ------- MEDIAKIT MEDIUM (<=768px) */
+
+@media screen and (min-width: 768px) {
+  
+    header {
+        height: 100px;
+        padding: 10px;
+        line-height: 40px;
+    }
+        
+    header h1 {
+        font-size: 40px;
+    }
+    header h3 {
+        display: block;
+        font-size: 20px;
+    }
+
+    main {
+        padding: 15px;
+        height: calc(100vh - 180px);
+        width: 100%;
+    }
+
+    nav {
+        position:fixed;
+        bottom: 0px;
+        left: 0;
+
+        height: 70px;
+        width: 100%;
+        background-color: #333;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #button-output {
+        overflow-y: hidden;
+    }
+
+    .box {
+        height: 25px;
+        width: 25px;
+    }
+
 }
-.box:hover {
-    cursor: pointer;
-}
-/* ------ / MAIN --------- */
-
-
-
-
