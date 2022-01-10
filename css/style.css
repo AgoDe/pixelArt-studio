@@ -72,6 +72,8 @@ nav {
 article {
     height: 100%;
     padding: 10px 3px;
+    float: left;
+    width: calc(100% - 50px)
 }
 .grid-box {
     background-color: white;
