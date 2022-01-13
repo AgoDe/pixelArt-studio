@@ -1,29 +1,4 @@
 
-
-// variabili 
-
-const outputHtml = document.getElementById('grid-output');
-const buttonHtml = document.getElementById('button-output')
-// bottoni 
-const color = ['white',
- 'aqua',
- 'blue',
- 'blueviolet',
- 'plum',
- 'pink',
- 'red',
- 'tomato',
- 'orange',
- 'yellow',
- 'lime',
- 'seagreen',
- 'green',
- 'brown',
- 'grey',
- 'black'
-]
-let colorSelect = ''
-
 // funzione per creare la tabella di disegno
 function gridCreator(container, numberRow, numberColumn, activeColor) {
     let rowBox = 0;
@@ -56,13 +31,54 @@ function buttonCreator(buttonOutput, colorArray, activeColor) {
         })
     }
 }
+// variabili 
+
+const outputHtml = document.getElementById('grid-output');
+const buttonHtml = document.getElementById('button-output')
+// bottoni 
+const color = ['white',
+ 'aqua',
+ 'blue',
+ 'blueviolet',
+ 'plum',
+ 'pink',
+ 'red',
+ 'tomato',
+ 'orange',
+ 'yellow',
+ 'lime',
+ 'seagreen',
+ 'green',
+ 'brown',
+ 'grey',
+ 'black'
+]
+let colorSelect = ''
+
+
+const question = document.getElementById('question');
+const exit = document.getElementById('exit');
+const questionBox = document.getElementById('question-box');
+
+questionBox.classList.add('none')
+
+question.addEventListener('click', function() {
+    questionBox.classList.remove('none')
+})
+exit.addEventListener('click', function() {
+    questionBox.classList.add('none')
+})
+
+
+
+
 
 
 // let userColumn = parseInt(prompt('scegli il numero di colonne'));
 // let userRow = parseInt(prompt('scegli il numero di righe'));
 
-let userColumn = 12;
-let userRow = 20;
+let userColumn = 26;
+let userRow = 16;
 
 gridCreator(outputHtml, userRow, userColumn, colorSelect)
 

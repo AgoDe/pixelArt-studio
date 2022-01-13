@@ -28,7 +28,8 @@ header {
     height: 30px;
     padding: 4px;
     border-bottom: white 2px solid ;
-    line-height: 50px
+    line-height: 50px;
+    position: relative;
 }
 
 header h1 {
@@ -38,6 +39,45 @@ header h1 {
 header h3 {
     display: none;
 }
+
+#question {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 30px;
+}
+
+#question-box {
+    color: black;
+    
+    width:500px;
+    border: black 4px solid;
+    background-color:white;
+    opacity: 0.95;
+    padding: 40px;
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+#question-box.none {
+    display: none;
+    transition: 1s;
+}
+
+#exit {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: 30px;
+    color: black;
+}
+#exit:hover,
+#question:hover {
+    cursor: pointer;
+}
+
 /* ----- / HEADER -------------- */
 
 main {
